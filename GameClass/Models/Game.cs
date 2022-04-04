@@ -6,11 +6,11 @@ namespace GameClass.Models
 {
     public abstract class Game
     {
-        public string GameName { get; set; }
-        public string Publisher { get; set; }
-        public double Price { get; set; }
-        public DateTime GameRelaseDate { get; set; }
-        public bool IsMultiplayer { get; set; }
+        public abstract string GameName { get; set; }
+        public abstract string Publisher { get; set; }
+        public abstract double Price { get; set; }
+        public abstract string GameRelaseDate { get; set; }
+        public abstract bool IsMultiplayer { get; set; }
 
     }
 }
