@@ -20,6 +20,7 @@ namespace GameClass.Models
             {
                 if(item is T)
                 {
+
                     Console.WriteLine(item.GameName);
                 }
             }
