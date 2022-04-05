@@ -6,11 +6,11 @@ namespace GameClass.Models
 {
     internal class RpgGame : Game, IAction, IRpg
     {
+        private int _level;
         private string _gameName;
         private string _publisher;
         private string _gameRelaseDate;
         private double _price;
-        private int _level;
         public int Level
         {
             get 
@@ -87,6 +87,15 @@ namespace GameClass.Models
             }
         }
         public override bool IsMultiplayer { get; set; }
+
+        public RpgGame(string gameName,string publisher, double price, string gameRelaseDate, bool isMultiplayer)
+        {
+            GameName = gameName;
+            Publisher = publisher;
+            Price = price;
+            GameRelaseDate = gameRelaseDate;
+            IsMultiplayer = isMultiplayer;
+        }
 
         public int LeftLevel()
         {

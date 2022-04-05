@@ -48,6 +48,13 @@ namespace GameClass.Models
             }
         }
 
+        public Account(string name, string email, string password)
+        {
+            Name = name;
+            EMail = email;
+            Password = password;
+        }
+
         public string ShowInfo()
         {
             return $@"Name-{Name}
