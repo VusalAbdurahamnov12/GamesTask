@@ -79,7 +79,6 @@ namespace GameClass.Models
             {
                 return _gameRelaseDate;
             }
-
             set
             {
                 if (!String.IsNullOrEmpty(value) && !String.IsNullOrWhiteSpace(value)) _gameRelaseDate = value;
