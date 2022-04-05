@@ -63,5 +63,15 @@ namespace GameClass.Models
         }
         public override bool IsMultiplayer { get  ; set  ; }
         public bool IsFps { get  ; set  ; }
+
+        public ShooterGame(string gameName, string publisher, double price, string gameRelaseDate, bool isMultiplayer, bool isFps)
+        {
+            GameName = gameName;
+            Publisher = publisher;
+            Price = price;
+            GameRelaseDate = gameRelaseDate;
+            IsMultiplayer = isMultiplayer;
+            IsFps = isFps;
+        }
     }
 }

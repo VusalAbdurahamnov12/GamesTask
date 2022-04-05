@@ -4,14 +4,15 @@ using System.Text;
 using GameClass.Interfaces;
 namespace GameClass.Models
 {
-    internal class HorrorGame : Game, IHorror
+    public class HorrorGame : Game, IHorror
     {
         private string _monsterName;
         private string _gameName;
         private string _publisher;
         private string _gameRelaseDate;
         private double _price;
-        public string MonsterName {
+        public string MonsterName
+        {
             get
             {
                 return _monsterName;
@@ -23,7 +24,8 @@ namespace GameClass.Models
                 else throw new Exception();
             }
         }
-        public override string GameName {
+        public override string GameName
+        {
             get
             {
                 return _gameName;
@@ -35,7 +37,8 @@ namespace GameClass.Models
                 else throw new Exception();
             }
         }
-        public override string Publisher {
+        public override string Publisher
+        {
             get
             {
                 return _publisher;
@@ -59,7 +62,8 @@ namespace GameClass.Models
                 else throw new Exception();
             }
         }
-        public override string GameRelaseDate {
+        public override string GameRelaseDate
+        {
             get
             {
                 return _gameRelaseDate;
@@ -71,8 +75,15 @@ namespace GameClass.Models
                 else throw new Exception();
             }
         }
-        public override bool IsMultiplayer { get   ; set   ; }
+        public override bool IsMultiplayer { get; set; }
 
-
+        public HorrorGame(string monsterName, string gameName, double price, string gameRelaseDate, bool isMultiplayer)
+        {
+            GameName = gameName;
+            MonsterName = monsterName;
+            Price = price;
+            GameRelaseDate = gameRelaseDate;
+            IsMultiplayer = isMultiplayer;
+        }
     }
 }

@@ -76,5 +76,14 @@ namespace GameClass.Models
             }
         }
         public override bool IsMultiplayer { get ; set ; }
+        public StrategyGame(string mapName, string gameName, string publisher, double price, string gameRelaseDate, bool isMultiplayer)
+        {
+            GameName = gameName;
+            Publisher = publisher;
+            Price = price;
+            GameRelaseDate = gameRelaseDate;
+            IsMultiplayer = isMultiplayer;
+            MapName = mapName;
+        }
     }
 }
