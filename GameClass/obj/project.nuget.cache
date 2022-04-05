@@ -1,10 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IHoiPMOsi+cw9zrMru1VaNFaY73HaxLl91vwDYnaZ2Dkr1k9kU0kmrCoTCOfXH4QqwR/HxZGWrD7as6IlBow8Q==",
+  "dgSpecHash": "2OdCAtTkyz7i4Eph3p6bLnA1gmYCqzJ6UzwE7UDLlc/2EeEZZ5pafHA75nUDvCTzwM7vvSXErSDRG3Tmg7h1Ig==",
   "success": true,
-  "projectFilePath": "C:\\Users\\asger\\Desktop\\Tasks\\GamesTask\\GameClass\\GameClass.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\asger\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.22\\microsoft.netcore.app.host.win-x64.3.1.22.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\tu839nxdv\\Desktop\\Code_Academy_Repo\\GamesTask\\GameClass\\GameClass.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

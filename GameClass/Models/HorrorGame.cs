@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Text;
 using GameClass.Interfaces;
+using GameClass.Extension;
+using GameClass.CustomException;
 namespace GameClass.Models
 {
     public class HorrorGame : Game, IHorror
@@ -21,7 +23,7 @@ namespace GameClass.Models
             set
             {
                 if (!String.IsNullOrEmpty(value) && !String.IsNullOrWhiteSpace(value)) _monsterName = value;
-                else throw new Exception();
+                else throw new StringNullEmptyWhiteSpcaeException("This cant be null , whitespace or empty");
             }
         }
         public override string GameName
@@ -34,7 +36,7 @@ namespace GameClass.Models
             set
             {
                 if (!String.IsNullOrEmpty(value) && !String.IsNullOrWhiteSpace(value)) _gameName = value;
-                else throw new Exception();
+                else throw new StringNullEmptyWhiteSpcaeException("This cant be null , whitespace or empty");
             }
         }
         public override string Publisher
@@ -47,7 +49,7 @@ namespace GameClass.Models
             set
             {
                 if (!String.IsNullOrEmpty(value) && !String.IsNullOrWhiteSpace(value)) _publisher = value;
-                else throw new Exception();
+                else throw new StringNullEmptyWhiteSpcaeException("This cant be null , whitespace or empty");
             }
         }
         public override double Price
@@ -59,7 +61,7 @@ namespace GameClass.Models
             set
             {
                 if (value >= 0 && value <= 1000) _price = value;
-                else throw new Exception();
+                else throw new PriceException("This cant be negative or higher than 1000 $");
             }
         }
         public override string GameRelaseDate
@@ -72,7 +74,7 @@ namespace GameClass.Models
             set
             {
                 if (!String.IsNullOrEmpty(value) && !String.IsNullOrWhiteSpace(value)) _gameRelaseDate = value;
-                else throw new Exception();
+                else throw new StringNullEmptyWhiteSpcaeException("This cant be null , whitespace or empty");
             }
         }
         public override bool IsMultiplayer { get; set; }

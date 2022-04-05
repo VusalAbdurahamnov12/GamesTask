@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Text.RegularExpressions;
-
+using GameClass.Extension;
+using GameClass.CustomException;
 namespace GameClass.Models
 {
     internal class Account
@@ -20,7 +21,7 @@ namespace GameClass.Models
             set 
             {
                 if (!String.IsNullOrEmpty(value) && !String.IsNullOrWhiteSpace(value)) _name = value;
-                else throw new Exception();
+                else throw new StringNullEmptyWhiteSpcaeException("This cant be null , whitespace or empty");
             }
         }
         public string EMail
