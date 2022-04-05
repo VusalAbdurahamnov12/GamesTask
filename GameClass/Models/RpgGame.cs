@@ -101,7 +101,8 @@ namespace GameClass.Models
 
         public int LeftLevel()
         {
-            throw new NotImplementedException();
+            if (WantedLevel < Level) throw new Exception();
+            return WantedLevel - Level;
         }
     }
 }
