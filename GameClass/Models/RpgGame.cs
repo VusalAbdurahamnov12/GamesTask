@@ -101,7 +101,7 @@ namespace GameClass.Models
 
         public int LeftLevel()
         {
-            if (WantedLevel < Level) throw new Exception();
+            if (WantedLevel < Level) throw new LevelException("You already rich this level");
             return WantedLevel - Level;
         }
     }
