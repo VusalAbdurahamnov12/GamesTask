@@ -25,7 +25,5 @@ namespace GameClass.Models
                 }
             }
         }
-
-
     }
 }
